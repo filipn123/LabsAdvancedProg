@@ -36,7 +36,7 @@ public class StudyProgramme {
             applicantsScores.put(applicant, points);
         }
         publicQuotaApplicants = applicantsScores.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).limit(numPublicQuota).map(Map.Entry::getKey).collect(Collectors.toList());
-        privateQuotaApplicants = applicantsScores.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).map(Map.Entry::getKey).filter(a -> !publicQuotaApplicants.contains(a)).limit(numPublicQuota).collect(Collectors.toList());
+        privateQuotaApplicants = applicantsScores.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).map(Map.Entry::getKey).filter(a -> !publicQuotaApplicants.contains(a)).limit(numPrivateQuota).collect(Collectors.toList());
         rejectedApplicants = applicantsScores.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).map(Map.Entry::getKey).filter(a -> !publicQuotaApplicants.contains(a) && !privateQuotaApplicants.contains(a)).collect(Collectors.toList());
 
         enrolledInPublicQuota = publicQuotaApplicants.size();
