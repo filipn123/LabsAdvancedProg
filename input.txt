@@ -1,0 +1,10 @@
+1;Ana;4.9;Mother Tongue;5;Mathematics;5;Informatics;5;English;4;SI
+2;Boris;4.5;Mother Tongue;4;Mathematics;5;Informatics;4;Physics;3;IT
+3;Katerina;5.0;Mother Tongue;5;Mathematics;5;Physics;5;Electronics;5;KTI
+4;Petar;4.2;Mother Tongue;4;Mathematics;4;Informatics;3;Physics;4;SI
+5;Marija;4.8;Mother Tongue;5;Mathematics;5;Biology;4;Chemistry;5;OM
+6;Stefan;4.0;Mother Tongue;4;Mathematics;4;Physics;3;Electronics;4;EES
+7;Ivana;4.6;Mother Tongue;5;Mathematics;4;Informatics;5;English;5;IT
+8;Tanja;4.7;Mother Tongue;5;English;5;Mathematics;5;Chemistry;5;NURS
+9;Marko;4.3;Mother Tongue;4;Mathematics;4;Biology;3;Chemistry;4;OM
+10;Viktor;4.9;Mother Tongue;5;Mathematics;5;Physics;5;Electronics;5;KTI
