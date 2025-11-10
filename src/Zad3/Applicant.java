@@ -9,6 +9,7 @@ public class Applicant {
     private double gpa;
     private List<SubjectWithGrade> subjectsWithGrade;
     private StudyProgramme studyProgramme;
+    private double score;
     
     public Applicant(double gpa, String name, int id, StudyProgramme studyProgramme) {
         this.gpa = gpa;
@@ -21,7 +22,12 @@ public class Applicant {
     public void addSubjectAndGrade(String subject, int grade) {
         subjectsWithGrade.add(new SubjectWithGrade(subject, grade));
     }
-    
+
+    @Override
+    public String toString() {
+        return String.format("Id: %d, Name: %s, GPA: %.1f - %s", id, name, gpa, score);
+    }
+
     public double calculatePoints() {
         double totalPoints = 0;
         totalPoints += gpa * 12;
@@ -33,6 +39,7 @@ public class Applicant {
                 totalPoints += subjectWithGrade.getGrade() * 1.2;
             }
         }
+        score = totalPoints;
         return totalPoints;
     }
 }
